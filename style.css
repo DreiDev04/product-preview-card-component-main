@@ -150,4 +150,35 @@ button{
   font-weight: var(--fw-Bold);
   color: var(--clr-White);
   font-size: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover{
+  background-color: 	hsl(156, 42%, 18%);
+}
+.icon{
+  background: url(./images/icon-cart.svg);
+  height: 15px;
+  width: 15px;
+  display: block;
+  margin-right: .5rem;
+
+}
+
+@media screen and (min-width: 375px){
+  .container{
+    flex-direction: row;
+    max-width: 40%;
+    border-radius: .5rem ;
+
+  }
+  .image_container img{
+    content: url(./images/image-product-desktop.jpg);
+    object-fit: contain;
+  }
+  .desc_container{
+    max-width: 50%;
+  }
 }
